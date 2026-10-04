@@ -1,0 +1,21 @@
+{
+  "name": "@breadcrumb/agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": { "build": "tsc", "test": "vitest run" },
+  "dependencies": {
+    "@breadcrumb/shared": "workspace:*",
+    "@breadcrumb/analyzer": "workspace:*",
+    "@breadcrumb/dependency-engine": "workspace:*",
+    "@breadcrumb/task-engine": "workspace:*",
+    "@breadcrumb/gemma": "workspace:*",
+    "@breadcrumb/git-engine": "workspace:*",
+    "@mastra/core": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

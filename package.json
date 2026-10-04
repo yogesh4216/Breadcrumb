@@ -1,0 +1,22 @@
+{
+  "name": "breadcrumb",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI project navigator for beginner developers",
+  "scripts": {
+    "dev": "pnpm --filter @breadcrumb/api dev & pnpm --filter @breadcrumb/web dev",
+    "dev:api": "pnpm --filter @breadcrumb/api dev",
+    "dev:web": "pnpm --filter @breadcrumb/web dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "keywords": ["ai", "project-navigator", "gemma", "developer-tools"],
+  "license": "MIT",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@sentry/cli"
+    ]
+  }
+}
